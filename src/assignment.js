@@ -13,11 +13,16 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
-}
-// assignment.sumOfNumbers = sumOfNumbers;
 
+arrayOfNumbers =[1,2,3,4,5,6,7,8,9,10];
+function sumOfNumbers(arrayOfNumbers) {
+  let sum = 0; 
+    for (i=0; i<arrayOfNumbers.length; i++){
+      sum = sum + arrayOfNumbers[i];
+    }
+    return sum;
+}
+console.log(sumOfNumbers(arrayOfNumbers));
 /**
  * Challenge - 2
  * 
@@ -27,12 +32,20 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
-function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
-}
-// assignment.countEvenNumbers = countEvenNumbers;
 
-/**
+arrayOfNumbers = [2, 6, 7,4,8,9,14,16,19]
+function countEvenNumbers(arrayOfNumbers) {
+  let count = 0;
+  for (i =0; i<arrayOfNumbers.length; i++){
+    if(arrayOfNumbers[i] % 2 == 0 ){
+      count +=1;
+    }
+  }
+    return  count;
+}
+
+console.log(countEvenNumbers(arrayOfNumbers));
+/*
  * Challenge - 3
  * 
  * Given an array of numbers representing temperatures in Celsius,
